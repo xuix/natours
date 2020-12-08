@@ -12,6 +12,8 @@
     border: none;
     border-bottom: 3px solid transparent;
     width: 90%;
+    @include respond(tab-port){
+      width: 100%;}
     display: block;
     transition: all 0.3s;
     &:focus {
@@ -52,6 +54,11 @@
     width: 49%;
     // make the buttons appear side by side
     display: inline-block;
+    @include respond(tab-port){
+      width: 100%;
+      border-bottom: 2rem;
+
+    }
   }
 
   // once the radio buttons are working, hide the default html buttons
